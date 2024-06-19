@@ -41,6 +41,6 @@ const videoSchema = new Schema(
   }
 );
 
-videoSchema.plugin(mongooseAggregatePaginate)
+videoSchema.plugin(mongooseAggregatePaginate);
 
 export const Videos = mongoose.model("Videos", videoSchema);
